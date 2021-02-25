@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/gregyjames/twitter-stock-sentiment/badge)](https://www.codefactor.io/repository/github/gregyjames/twitter-stock-sentiment)
 # twitter-stock-sentiment
 This tool trains a NLTK Naive Bayes classifier on positive and negative tweet data then collects, cleans, and classifies the sentiments of live and trending tweets about specified stock tickers to gauge overall market sentiment and its effects on stock price.
 

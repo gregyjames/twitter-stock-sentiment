@@ -9,11 +9,11 @@ This tool trains a NLTK Naive Bayes classifier on positive and negative tweet da
 Collects the specified number of tweets for the specified ticker symbol to get the overall sentiment for the stock at the given moment.
 
 #### Options:
-ticker: the ticker to look up
+`ticker`: the ticker to look up
 
-mode: 'popular','recent', or 'mixed'
+`mode`: 'popular','recent', or 'mixed'
 
-num: the number of tweets to get
+`num`: the number of tweets to get
 
 ### Stream
 `stream("tsla", 60000, 60, 1)`
@@ -21,13 +21,13 @@ num: the number of tweets to get
 Uses Tweepy stream to collect and calculate the sentiments for live tweets for a specified ticker and plots them against a normalized price curve to see the relationship of twitters sentiment on the overall price of the stock over time. Could be used to find potential good times to invest.
 
 ### Options:
-ticker: the ticker to stream
+`ticker`: the ticker to stream
 
-interval: how often to update the graph (in milliseconds)
+`interval`: how often to update the graph (in milliseconds)
 
-numpoints: number of points to display on the graph
+`numpoints`: number of points to display on the graph
 
-weeksback: how far back to go for the high/low to normalize stock data
+`weeksback`: how far back to go for the high/low to normalize stock data
 
 ## License
 MIT License

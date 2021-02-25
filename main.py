@@ -418,10 +418,11 @@ def stream(ticker, interval, numpoints, weeksback):
 
         # Draw x and y lists
         ax.clear()
-        ax.plot(xs, ys, linestyle='--', marker='o', color='b')
-        ax.plot(xs, prices, linestyle='--', marker='x', color='r')
+        ax.plot(xs, ys, linestyle='--', marker='o', color='b', label="sentiment")
+        ax.plot(xs, prices, linestyle='--', marker='x', color='r', label="price")
         ax.fill_between(xs, ys, prices, alpha=0.7)
-
+        ax.legend("sentiment","price")
+        
         # Format plot
         plt.xticks(rotation=45, ha='right')
         plt.subplots_adjust(bottom=0.30)

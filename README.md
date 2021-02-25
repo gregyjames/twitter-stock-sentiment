@@ -16,6 +16,7 @@ Collects the specified number of tweets for the specified ticker symbol to get t
 `num`: the number of tweets to get
 
 ### Stream
+![Example Graph](https://i.imgur.com/Xn8906P.png)
 `stream("tsla", 60000, 60, 1)`
 
 Uses Tweepy stream to collect and calculate the sentiments for live tweets for a specified ticker and plots them against a normalized price curve to see the relationship of twitters sentiment on the overall price of the stock over time. Could be used to find potential good times to invest.
